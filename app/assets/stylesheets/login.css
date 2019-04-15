@@ -1,0 +1,333 @@
+
+/*
+
+h2{
+position: relative;
+padding: 0.1em;
+background: #e6a15c;
+width: 20%;
+margin-left: 40%;
+}
+
+h2::before {
+position: absolute;
+content: '';
+top: 100%;
+left: 0;
+border: none;
+border-bottom: solid 15px transparent;
+border-right: solid 20px rgb(149, 158, 155);
+}
+
+
+.form_area.1{
+	height: 300px;
+    border-radius: 20px;
+    font-size: 17px; 
+    margin-bottom: 10px;
+}
+
+.form_area.2{
+	height: 150px;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px; 
+    margin-bottom: 10px;        	    
+}
+
+.form_area ul{
+	box-shadow:0px 0px 6px 3px #e6a15c;
+	border-radius:6px 6px 6px 6px ;
+	border:1px solid #bdd9e6;
+	text-align: left;
+	background-color:#e6a15c;
+	position: relative;
+	height: 30px;
+}
+
+.form_area ul li{
+	display: inline-block;
+	padding-left: 0;	
+}
+
+
+
+li.user_data{
+  display: inline-block;
+  position: absolute;
+  left: 60%;
+  width: 35%;
+}
+
+.register{
+  height: 20px;
+  box-shadow:0px 0px 6px 3px #e6a15c;
+  border-radius:6px 6px 6px 6px ;
+  border:1px solid #bdd9e6;
+  width: 100%;
+}
+*/
+
+h5 {
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+}
+
+h5:before, h5:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 45px;
+  height: 1px;
+  background-color: black;
+}
+
+h5:before {
+  left:0;
+}
+h5:after {
+  right: 0;
+}
+
+.login-label{
+    padding-top: 1%;
+    padding-left: 10px;
+	width: 80px;
+}
+
+.button-area{
+    margin-top: 10px;
+ 	text-align: center;
+ 	padding-left: 150px;
+ 	padding-right: 150px;
+
+}
+
+.new{
+	padding-right: 0;
+	padding-left: 70%;
+}
+/*
+.real_name_area{
+	height: 50px;
+	padding-top: 5px;
+	border-bottom: thin solid #C0C0C0;
+}
+*/
+
+/*
+.real_name_name{
+	float: left;
+	margin-left: 20px;
+}
+
+.user_real_name{
+	float: right;
+	width: 200px;
+	margin:5px 30px;
+	border-radius: 20px;
+	height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+
+.name_area{
+	height: 50px;
+	padding-top: 5px;
+	border-bottom: thin solid #C0C0C0;
+}
+.name_name{
+	float: left;
+	margin-left: 20px;
+}
+
+.user_name{
+	float: right;
+	width: 200px;
+	margin:5px 30px;
+	border-radius: 20px;
+	height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+.belong_area{
+	height: 50px;
+	padding-top: 5px;
+	border-bottom: thin solid #C0C0C0;
+}
+.belong_name{
+	float: left;
+	margin-left: 20px;
+}
+
+.user_belong{
+	float: right;
+	width: 200px;
+	margin:5px 30px;
+	border-radius: 20px;
+	height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+.event_area{
+	height: 50px;
+	padding-top: 5px;
+	border-bottom: thin solid #C0C0C0;
+}
+.event_name{
+	float: left;
+	margin-left: 20px;
+}
+
+.user_event{
+	float: right;
+	width: 200px;
+	margin:5px 30px;
+	border-radius: 20px;
+	height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+.tel_area{
+	height: 50px;
+	padding-top: 5px;
+	border-bottom: thin solid #C0C0C0;
+}
+.tel_name{
+	float: left;
+	margin-left: 20px;
+}
+
+.user_tel{
+	float: right;
+	width: 200px;
+	margin:5px 30px;
+	border-radius: 20px;
+	height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+.password_area{
+	height: 50px;
+	padding-top: 5px;
+}
+
+.password_name{
+	float: left;
+	margin-left: 20px;
+}
+
+.user_password{
+	float: right;
+	width: 200px;
+	margin:5px 30px;
+	border-radius: 20px;
+	height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+
+/*既存ユーザーはここから 
+.form_area2{
+	height: 150px;
+    background-color: #6088C6;
+    box-shadow: 0 0 10px #C0C0C0;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px; 
+    margin-bottom: 10px;
+    
+
+}
+.tel_area2{
+	height: 75px;
+	padding-top: 30px;
+	border-bottom: thin solid #C0C0C0;
+
+}
+.tel_name2{
+	float: left;
+	margin-left: 20px;
+}
+
+.user_tel2{
+	float: right;
+	width: 150px;
+	margin:0px 30px;
+	border-radius: 20px;
+	height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+.password_area2{
+	height: 100px;
+	padding-top: 20px;
+	
+}
+
+.password_name2{
+	float: left;
+	margin-left: 20px;
+}
+
+.user_password2{
+	float: right;
+	width: 150px;
+	margin:0px 30px;
+	border-radius: 20px;
+	height: 30px;
+    box-shadow: 0 0 10px gray;
+}
+*/
+/*ログインボタン */
+.login_submit{
+	margin-bottom: 10px;
+	height: 50px;
+	text-align: right;
+
+}
+.new_btn_submit {
+	font-size: 10px;
+    padding: 7px 20px;
+	border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-image: -webkit-linear-gradient(45deg, #e66465, 0%, #6AC1B7 100%);
+    background-image: linear-gradient(45deg, #e66465, 0%, #6AC1B7 100%);
+    transition: .4s;
+    box-shadow: 0 0 10px black;
+
+}
+
+.new_btn_submit:hover {
+    background-image: -webkit-linear-gradient(45deg, #e66465, 0%, #000022 100%);
+    background-image: linear-gradient(45deg, #e66465, 0%, #000022 100%);
+}
+
+/*新規登録はこちら */
+.new_guide{
+	margin-bottom: 10px;
+	height: 50px;
+	text-align: right;
+
+}
+.new_btn_guide {
+	font-size: 10px;
+    padding: 7px 20px;
+	border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-image: -webkit-linear-gradient(45deg, #e66465, 0%, #6AC1B7 100%);
+    background-image: linear-gradient(45deg, #e66465, 0%, #6AC1B7 100%);
+    transition: .4s;
+    box-shadow: 0 0 10px black;
+
+}
+
+.new_btn_guide:hover {
+    background-image: -webkit-linear-gradient(45deg, #e66465, 0%, #000022 100%);
+    background-image: linear-gradient(45deg, #e66465, 0%, #000022 100%);
+}
+

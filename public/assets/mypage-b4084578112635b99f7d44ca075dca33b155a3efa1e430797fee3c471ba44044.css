@@ -1,0 +1,62 @@
+h1.mypage {
+  position: relative;
+  color: #f0ad4e;
+  font-size: 20px;
+  padding: 10px 0;
+  text-align: center;
+  margin: 1.5em 0;
+}
+h1.mypage:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  width: 150px;
+  height: 58px;
+  border-radius: 50%;
+  border: 5px solid #f0ad4e;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/*
+.menue {
+padding:5%;
+    color: black;
+    background: white;/*背景色
+    border-top: solid 6px #f0ad4e;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.32);/*影
+
+}
+*/
+.menue-area{
+    background-color: white;
+    margin: 10px 0 10px 0;
+    padding: 15px;
+
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px 2px #666;
+    line-height: 1.9;
+}
+
+.menue-body{
+
+}
+
+.menue-title{
+  border-left : solid 20px #666 ;
+  border-bottom : solid 2px #666 ;
+}
+
+.menue-comment{
+  text-align: left;
+
+}
+
+
+
+
+
+

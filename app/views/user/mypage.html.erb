@@ -1,0 +1,39 @@
+<h4><%= @error_message %></h4>    
+<h1 class="mypage">管理者ページ</h1>
+
+<div class="button-area new">
+  <a href="/logout" class="btn btn-secondary btn-sm">ログアウト</a>
+</div>
+
+<div><h5>公開されたコラム</h5></div>
+<div class="button-area">
+    <a href="/draft/new" class="btn btn-warning btn-sm">新規投稿</a>
+</div>
+
+<div><h5>公開された練習メニュー</h5></div>
+<% @user.menues.each do |menue| %>
+ <% if @user.menues.present? %>
+ <div class="menue-area">
+  <div class="menue-body">
+    <h4 class="menue-title"><%= menue.title %></h4>
+    <p class="menue-comment"><%= menue.comment %></p>
+    <p class="menue-text">
+        <small class="text-muted"><%= menue.menue_event %></small>
+        <small class="text-muted"><%= menue.menue_level %></small>
+    </p>
+    <p>
+        <small class="text-muted">投稿日時：<%= menue.updated_at %></small>
+    </p>
+    <div class="btn btn-warning">
+        <%= link_to("詳細", "/menue/show/#{session[:menue_id]}") %>
+    </div>
+  </div>
+  <img class="menue-img-bottom" src="..." alt="Card image cap">
+ </div>
+ <% else %>
+    <p>まだ投稿はありません</p>
+ <% end %>
+<% end %>
+<div class="button-area">
+    <a href="/menue/new" class="btn btn-warning btn-sm">新規投稿</a>
+</div>

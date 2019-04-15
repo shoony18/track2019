@@ -1,0 +1,118 @@
+
+.column-top {
+  padding-top: 30px;
+  color: #7b6459;/*文字色*/
+}
+
+.column-tab-area{
+	padding: 0;
+}
+
+.column-tab{
+	display: inline-block;
+	background-color: #FFEEDC;
+	padding: 0 5px 0 5px;
+	border-radius: 5px;
+
+}
+.column-area{
+	border-radius: 30%;
+	padding: 2%;
+	height: 100px;
+
+}
+
+.column_image{
+	display: block;
+	margin-left: 25%;
+    width: 50%;
+	height: 50%;
+}
+
+.column-title-area{
+	box-shadow: 0 2px 2px gray;	
+	text-align: left;
+	background-color: white;
+	color: black;
+	padding: 2%;
+	margin: 2%;
+	width:46%;
+	height: 300px;
+	float: left;
+	background-color: #FFEEDC;
+
+}
+
+.column-title-area:hover{
+	box-shadow: 0 10px 15px -5px gray,0 0 5px gray;/*浮いた時の影*/	
+	transform: translateY(-3px);/*浮く高さ*/	
+	transition: 0.3s;/*浮く速さ（秒）*/	
+	background: rgba(238,238,238,.4);/*浮いた時の背景色（なくてもよい）*/	
+}
+
+.column-title{
+	padding-bottom: 5px;
+	border-bottom: double 5px #FFC778;
+}
+
+.column-title-img{
+	display: block;
+	margin-top: 20px;
+	width: 100%;
+	height: 70%;
+}
+
+.draft-area{
+	padding-bottom: 30px;
+}
+
+.draft-topic {
+  position: relative;
+  background: #FFEEDC;
+  padding: 2px 5px 2px 40px;
+  font-size: 20px;
+  color: #474747;
+  border-radius: 0 10px 10px 0;
+  text-align: left;
+
+}
+
+.draft-topic:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f135";
+  display: inline-block;
+  line-height: 40px;
+  position: absolute;
+  padding: 0em;
+  color: white;
+  background: #ffa337;
+  font-weight: normal;
+  width: 40px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: -0.1em;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: solid 3px white; 
+  border-radius: 50%;
+}
+
+.draft-article{
+	text-align: left;
+	padding-top: 30px;
+
+}
+
+.column_data{
+	width: 100%;
+}
+.confirm{
+	opacity: 0.5;
+}
+
+.button-area1{
+margin-top: 100px;
+
+}

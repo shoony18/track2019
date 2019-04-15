@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container{
+  font-family: 'メイリオ', Meiryo,'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Verdana',sans-serif;
+  width: 100%;
+  margin: 65px 0px;
+  height: 820px;
+  text-align: center;
+  background-image: url(https://cdn.pixabay.com/photo/2013/02/05/15/18/landscape-78058__480.jpg);
+  background-size: cover;
+}
+
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background: rgba(255,255,255,0.2);
+  height: 820px;
+  color: white;
+  text-align: center;
+}
+
+
+.top-wrapper h1 {
+  opacity: 0.8;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  opacity: 0.8;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 100px 0;
+  display: inline-block;
+}
+
+.btn-wrapper p {
+  margin: 30px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color:#000022;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+
+}
+
+.header_container{
+  height: 65px;
+}
+
+
+.header_container h1{
+  float: left;
+  color: white;
+  margin-top: 5px;
+ 
+}
+
+.header-right {
+  float: right;
+  color: white;
+    margin-top: 0px;
+
+}
+
+.header-right li {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  float: left;
+  transition: all 0.5s;
+  list-style: none;
+}
+
+.header-right a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* menu-iconのCSSを貼り付けてください */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  /* displayをnoneに指定してください */
+  display:none;
+}
+

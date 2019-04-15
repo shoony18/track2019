@@ -1,0 +1,69 @@
+<div class="confirm">
+<% if @TrackColumn.column_title.present? %>
+<h1 name="index_column_title"><%= simple_format(@TrackColumn.column_title) %></h1>
+<% else %>
+<% end %>
+
+<% if @TrackColumn.title_image.present? %>
+<img src="<%= "/TrackColumn_images/#{@TrackColumn.title_image}" %>" class="column_image" name="index_title_image">
+<% else %>
+<% end %>
+
+<div class="draft-article">
+<% if @TrackColumn.column_lead.present? %>
+<%= simple_format(@TrackColumn.column_lead) %>
+<% else %>
+<% end %>
+
+<% if @TrackColumn.column_topic1.present? %>
+<h2 class="draft-topic"><%= simple_format(@TrackColumn.column_topic1) %></h2>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_article1.present? %>
+<p><%= simple_format(@TrackColumn.column_article1) %></p>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_image1.present? %>
+<img src="<%= "/TrackColumn_images/#{@TrackColumn.column_image1}" %>" class="column_image">
+<% else %>
+<% end %>
+
+<% if @TrackColumn.column_topic2.present? %>
+<h2 class="draft-topic"><%= simple_format(@TrackColumn.column_topic2) %></h2>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_article2.present? %>
+<p><%= simple_format(@TrackColumn.column_article2) %></p>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_image2.present? %>
+<img src="<%= "/TrackColumn_images/#{@TrackColumn.column_image2}" %>" class="column_image">
+<% else %>
+<% end %>
+
+<% if @TrackColumn.column_topic3.present? %>
+<h2 class="draft-topic"><%= simple_format(@TrackColumn.column_topic3) %></h2>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_article3.present? %>
+<p><%= simple_format(@TrackColumn.column_article3) %></p>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_image3.present? %>
+<img src="<%= "/TrackColumn_images/#{@TrackColumn.column_image3}" %>">
+<% else %>
+<% end %>
+
+</div>
+
+<%= form_tag("/draft/#{@TrackColumn.id}/upload",{multipart: true}) do %>
+<div class="button-area">
+<input type="submit" class="btn btn-success btn-sm" value="公開する">
+</div>
+<% end %>
+
+<div class="button-area">
+<a href="/draft/index" class="btn btn-warning btn-sm">コラム一覧へ</a>
+</div>
+</div>
+

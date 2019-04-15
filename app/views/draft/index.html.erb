@@ -1,0 +1,21 @@
+<h3 class="column-top">コラム一覧</h3>
+<ul class="column-tab-area">
+	<li class="column-tab">短距離</li>
+	<li class="column-tab">長距離</li>
+	<li class="column-tab">跳躍</li>
+	<li class="column-tab">投擲</li>
+</ul>
+<% @TrackColumns.each do |trackColumn| %>
+    
+    <%= link_to("/draft/#{trackColumn.id}") do %>
+    	<h4 class="column-title-area">
+    	<div class="column-title">
+    		<%= trackColumn.column_title %>
+    	</div>
+    	<img class="column-title-img" src="<%= "/TrackColumn_images/#{trackColumn.title_image}" %>">
+        </h4>
+    <% end %>
+<% end %>
+<div class="clear"></div>
+
+</div>

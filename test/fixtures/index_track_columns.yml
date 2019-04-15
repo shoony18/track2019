@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  index_column_title: MyString
+  index_title_image: MyString
+
+two:
+  index_column_title: MyString
+  index_title_image: MyString

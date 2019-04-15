@@ -1,0 +1,64 @@
+<%= form_tag("/draft/#{@TrackColumn.id}/update",{multipart: true}) do %>
+
+<h1>タイトル
+<textarea class="column_data" name="column_title">
+<%= raw(@TrackColumn.column_title.gsub(/\n/,'<br>') )%>
+</textarea>
+</h1>
+
+<p>タイトル画像</p>
+<input class="column_data" name="image" type="file">
+
+<div class="draft-article">
+<p>リード文</p>
+<textarea class="column_data" name="column_lead" >
+<%= raw(@TrackColumn.column_lead.gsub(/\n/,'<br>') )%>
+</textarea>
+
+<h2 class="draft-topic">トピック1
+<textarea class="column_data" name="column_topic1">
+<%= raw(@TrackColumn.column_topic1.gsub(/\n/,'<br>') )%>
+</textarea>
+</h2>
+<p>記事1</p>
+<textarea class="column_data" name="column_article1">
+<%= raw(@TrackColumn.column_article1.gsub(/\n/,'<br>') )%>
+</textarea>
+<p>挿入画像1</p>	
+<input class="column_data" name="image1" type="file">
+
+<h2 class="draft-topic">トピック2
+<textarea class="column_data" name="column_topic2">
+<%= raw(@TrackColumn.column_topic2.gsub(/\n/,'<br>') )%>
+</textarea>
+</h2>
+<p>記事2</p>
+<textarea class="column_data" name="column_article2">
+<%= raw(@TrackColumn.column_article2.gsub(/\n/,'<br>') )%>
+</textarea>
+<p>挿入画像2</p>	
+<input class="column_data" name="image2" type="file">
+
+
+<h2 class="draft-topic">トピック3
+<textarea class="column_data" name="column_topic3">
+<%= raw(@TrackColumn.column_topic3.gsub(/\n/,'<br>') )%>
+</textarea>
+</h2>
+<p>記事3</p>
+<textarea class="column_data" name="column_article3">
+<%= raw(@TrackColumn.column_article3.gsub(/\n/,'<br>') )%>
+</textarea>
+<p>挿入画像3</p>	
+<input class="column_data" name="image3" type="file">
+
+</div>
+
+<div class="button-area">
+<input type="submit" class="btn btn-success btn-sm" value="アップロード">
+</div>
+<% end %>
+
+<div class="button-area">
+<%= link_to("削除", "/draft/#{@TrackColumn.id}/destroy", {method: "post"}) %>
+</div>

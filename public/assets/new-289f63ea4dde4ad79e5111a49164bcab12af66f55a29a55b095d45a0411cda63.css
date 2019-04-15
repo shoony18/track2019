@@ -1,0 +1,267 @@
+/*共通CSS*/
+
+body{
+  background-image: url();
+}
+img{
+  width: 20%;
+  margin-top: 100px;
+}
+
+textarea{
+  height: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 8px gray;
+}
+
+.container{
+  font-family: 'メイリオ', Meiryo,'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN','Verdana',sans-serif;
+  width: 100%;
+  margin: 65px 0px;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  height: 30px;
+  background-color: gray;
+  opacity: 0.5;
+}
+
+/*左側コンテンツ */
+.post-content1{
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+
+.icon-area{
+  height: 294px;
+
+
+}
+
+
+/*プロフィール1 */
+.profile1-area{
+  border-radius: 15px;
+  background-color:orange;
+  margin: 50px 80px 50px 80px;
+  padding: 20px;
+  box-shadow: 0 0 15px gray;
+  height: 350px;
+}
+
+.profile1-title{
+  border-radius: 30px;
+  background-color: orange;
+  box-shadow: 0 0 30px white;
+  margin: 0% 15% 0% 15%;
+}
+
+
+/*プロフィール各エリア共通*/
+
+/*名前*/
+.name-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.name-area .name{
+  float: left;
+}
+
+.name-area .text-name{
+  float: right;
+}
+
+.btn-real-name-area{
+  text-align: right;
+
+}
+
+/*所属*/
+.belong-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.belong-area .belong{
+  float: left;
+}
+
+.belong-area .text-belong{
+  float: right;
+}
+
+/*専門種目*/
+.event-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.event-area .event{
+  float: left;
+}
+
+.event-area .text-event{
+  float: right;
+}
+
+/*自己ベスト*/
+.pb-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.pb-area .pb{
+  float: left;
+}
+
+.pb-area .text-pb{
+  float: right;
+}
+
+
+/*右側コンテンツ */
+.post-content2{
+  float: right;
+    text-align: center;
+    width: 50%;
+
+}
+
+
+/*プロフィール2 */
+.profile2-area{
+  border-radius: 15px;
+  background-color:orange;
+  margin: 50px 80px 50px 80px;
+  padding: 20px;
+  box-shadow: 0 0 15px gray;
+}
+
+.profile2-title{
+  border-radius: 30px;
+  background-color: orange;
+  box-shadow: 0 0 30px white;
+  margin: 0% 15% 0% 15%;
+}
+
+/*直近出場予定試合*/
+.match-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.match-area .match{
+  float: left;
+}
+
+.match-area .text-match{
+  float: right;
+}
+
+/*日時*/
+.date-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.date-area .date{
+  float: left;
+}
+
+.date-area .text-date{
+  float: right;
+}
+
+/*場所*/
+.place-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.place-area .place{
+  float: left;
+}
+
+.place-area .text-place{
+  float: right;
+}
+
+/*講座情報 */
+.lesson-area{
+  border-radius: 15px;
+  background-color:orange;
+  margin: 50px 80px 50px 80px;
+  padding: 20px;
+  box-shadow: 0 0 15px gray;
+}
+
+.lesson-title{
+  border-radius: 30px;
+  background-color: orange;
+  box-shadow: 0 0 30px white;
+  margin: 0% 15% 0% 15%;
+}
+
+/*講座内容*/
+.content-area{
+  margin-top: 30px;
+  height: 300px;
+}
+
+.content-area .content{
+  float: left;
+}
+
+.content-area .text-content{
+  float: right;
+  height: 300px;
+}
+
+.btn-sample-area{
+
+  text-align: right;
+}
+
+
+
+/*日時*/
+.date-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.date-area .date{
+  float: left;
+}
+
+.date-area .text-date{
+  float: right;
+}
+
+/*場所*/
+.place-area{
+  margin-top: 30px;
+  height: 30px;
+}
+
+.place-area .place{
+  float: left;
+}
+
+.place-area .text-place{
+  float: right;
+}
+
+.btn-register-area{
+  text-align: right;
+  margin-right: 50px;
+  margin-bottom: 30px;
+}
+
+

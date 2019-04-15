@@ -1,0 +1,62 @@
+
+ <div class="post-content1">
+    <div class="icon-area">
+    <%= image_tag '/official_track_logo.png' %>
+    </div>
+
+    <%= form_tag("/user/#{@user.id}/update") do %>
+    <div class="profile0-area">
+  	
+
+    <div class="name-area">
+    <p>ユーザー名</p>
+    <input type="text" name="user_name" class="edit" value="<%= @user.user_name %>">
+    <div class="clear"></div>
+    </div>
+    
+    <div class="profile1-area">
+    <ul>
+        <li>所属</li>
+        <li class="user_data">
+            <input type="text" name="belong" class="edit" value="<%= @user.belong %>">
+        </li>
+    </ul>
+    <ul>
+        <li>専門</li>
+        <li class="user_data">
+            <input type="text" name="event" class="edit" value="<%= @user.event %>">
+        </li>
+    </ul>
+
+    <ul>
+        <li>自己ベスト</li>
+        <li class="user_data">
+            <input type="text" name="best" class="edit" value="<%= @user.best %>">
+        </li>
+    </ul>
+
+    <ul>
+        <li>主な成績</li>
+        <li class="user_data">
+            <input type="text" name="result" class="edit" value="<%= @user.result %>">
+        </li>
+    </ul>
+
+    <ul>
+        <li>今シーズン目標</li>
+        <li class="user_data">
+            <input type="text" name="target" class="edit" value="<%= @user.target %>">
+        </li>
+    </ul>
+
+    <ul>
+        <li>自己PR</li>
+        <li class="user_data">
+            <input type="text" name="apeal" class="edit" value="<%= @user.apeal %>">
+        </li>
+    </ul>
+
+    </div>
+    <input type="submit" class="new_btn_submit" value="保存">
+    <% end %>
+ </div>

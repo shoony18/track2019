@@ -1,0 +1,80 @@
+<% if @TrackColumn.column_title.present? %>
+<h1 class="draft-area"><%= raw(@TrackColumn.column_title.gsub(/\n/,'<br>') )%></h1>
+<% else %>
+<% end %>
+
+<% if @TrackColumn.title_image.present? %>
+<img src="<%= "/TrackColumn_images/#{@TrackColumn.title_image}" %>" class="column_image">
+<% else %>
+<% end %>
+
+<div class="draft-article">
+
+<% if @TrackColumn.column_lead.present? %>
+<%= raw(@TrackColumn.column_lead.gsub(/\n/,'<br>') )%>
+<% else %>
+<% end %>
+
+<% if @TrackColumn.column_topic1.present? %>
+<h2 class="draft-topic">
+<%= raw(@TrackColumn.column_topic1.gsub(/\n/,'<br>') )%>
+</h2>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_article1.present? %>
+<p>
+<%= raw(@TrackColumn.column_article1.gsub(/\n/,'<br>') )%>
+</p>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_image1.present? %>
+<img src="<%= "/TrackColumn_images/#{@TrackColumn.column_image1}" %>" class="column_image">
+<% else %>
+<% end %>
+
+<% if @TrackColumn.column_topic2.present? %>
+<h2 class="draft-topic">
+<%= raw(@TrackColumn.column_topic2.gsub(/\n/,'<br>') )%>
+</h2>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_article2.present? %>
+<p>
+<%= raw(@TrackColumn.column_article2.gsub(/\n/,'<br>') )%>
+</p>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_image2.present? %>
+<img src="<%= "/TrackColumn_images/#{@TrackColumn.column_image2}" %>" class="column_image">
+<% else %>
+<% end %>
+
+<% if @TrackColumn.column_topic3.present? %>
+<h2 class="draft-topic">
+<%= raw(@TrackColumn.column_topic3.gsub(/\n/,'<br>') )%>
+</h2>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_article3.present? %>
+<p>
+<%= raw(@TrackColumn.column_article3.gsub(/\n/,'<br>') )%>
+</p>
+<% else %>
+<% end %>
+<% if @TrackColumn.column_image3.present? %>
+<img src="<%= "/TrackColumn_images/#{@TrackColumn.column_image3}" %>" class="column_image">
+<% else %>
+<% end %>
+
+</div>
+
+<div class="button-area1">
+<a href="/draft/index" class="btn btn-warning btn-sm">コラム一覧へ</a>
+</div>
+
+<% if @current_user %>
+<div class="button-area btn btn-warning btn-sm">
+<%= link_to("編集","/draft/#{@TrackColumn.id}/edit") %>
+</div>
+<% end %>
+

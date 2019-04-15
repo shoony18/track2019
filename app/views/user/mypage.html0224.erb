@@ -1,0 +1,94 @@
+
+ <div class="post-content1">
+    <div class="icon-area">
+    <%= image_tag '/official_track_logo.png' %>
+    </div>
+    
+
+    <div class="profile0-area">
+  	    
+    <div class="name-area">
+    <p>ユーザー名</p>
+    <%= @user.user_name %>
+    <div class="clear"></div>
+    </div>
+    
+    <div class="shadow p-3 mb-5 bg-white rounded">
+    <ul>
+        <li>所属</li>
+        <li class="user_data"><%= @user.belong %></li>
+    </ul>
+    </div>
+    <div class="shadow p-3 mb-5 bg-white rounded">
+    <ul>
+        <li>専門</li>
+        <li class="user_data"><%= @user.event %></li>
+    </ul>
+    </div>
+    
+    <div class="shadow p-3 mb-5 bg-white rounded">
+    <ul>
+        <li>自己ベスト</li>
+        <li class="user_data"><%= @user.best %></li>
+    </ul>
+    </div>
+
+    <div class="shadow p-3 mb-5 bg-white rounded">
+    <ul>
+        <li>主な成績</li>
+        <li class="user_data"><%= @user.result %></li>
+    </ul>
+    </div>
+
+    <div class="shadow p-3 mb-5 bg-white rounded">
+    <ul>
+        <li>今シーズン目標</li>
+        <li class="user_data"><%= @user.target %></li>
+    </ul>
+    </div>
+    
+    <div class="shadow p-3 mb-5 bg-white rounded">
+    <ul>
+        <li>自己PR</li>
+        <li class="user_data"><%= @user.apeal %></li>
+    </ul>
+    </div>
+    </div>
+    
+    <p class="mypage_button"><%= link_to("編集", "/user/#{@user.id}/edit",:style=>"color:white;") %></p>
+    <p class="mypage_button"><%= link_to "ログアウト", "/logout", :style=>"color:white;"%></p>
+
+    <div class="menue1-area">
+            
+        <div class="title-area">
+        <p>練習メニューの投稿</p>
+        </div>
+    
+    <% if session[:menue_id] %>    
+    <div class="menue2-area">
+    <ul>
+        <li>タイトル</li>
+        <li class="user_data"><%= @menue.title %></li>
+    </ul>
+    <ul>
+        <li>時期/頻度</li>
+        <li class="user_data"><%= @menue.frequency %></li>
+    </ul>
+
+    <ul>
+        <li>負荷</li>
+        <li class="user_data"><%= @menue.stress %></li>
+    </ul>
+
+    <ul>
+        <li>説明</li>
+    </ul>
+    <div class="menue_comment"><%= @menue.comment %></div>
+    <% else %>
+    <p>まだ投稿はありません</p>
+    <% end %>
+
+    <p class="mypage_button"><%= link_to("新規投稿", "/user/#{@user.id}/edit",:style=>"color:white;") %></p>
+    <p class="mypage_button"><%= link_to "他の投稿一覧", "/logout", :style=>"color:white;"%></p>
+ 
+ </div>

@@ -1,0 +1,19 @@
+.post-content{
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+
+}
+.icon-area{
+	float: left;
+}
+.match-area{
+	float: right;
+}
+.match-title{
+	background-color: gray;
+}
+.match-area textarea{
+
+	display: block;
+}
